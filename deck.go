@@ -26,3 +26,10 @@ func (cards deck) print(){
 		fmt.Println(i, card)
 	}
 }
+
+// Slice Range Syntax
+
+// abc[startIndexIncluding : upToNotIncluding]
+// can be written as 
+// abc[0:3] also abc[:3]
+// similar abc[3:]
