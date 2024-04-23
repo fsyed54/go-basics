@@ -27,9 +27,7 @@ func (cards deck) print(){
 	}
 }
 
-// Slice Range Syntax
+func deal(d deck, handSize int) (deck, deck) {
+	return d[:handSize], d[handSize:]
 
-// abc[startIndexIncluding : upToNotIncluding]
-// can be written as 
-// abc[0:3] also abc[:3]
-// similar abc[3:]
+}
