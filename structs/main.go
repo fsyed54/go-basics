@@ -21,8 +21,8 @@ func main() {
 			zipCode: 94000,
 		},
 	}
-	jimPointer := &jim //actual value of struct in the memory
-	jimPointer.updateName("Jimmy")
+
+	jim.updateName("Jimmy") //Type of person now
 	jim.print()
 }
 
