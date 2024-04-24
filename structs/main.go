@@ -21,13 +21,13 @@ func main() {
 			zipCode: 94000,
 		},
 	}
-	jimPointer := &jim
+	jimPointer := &jim //actual value of struct in the memory
 	jimPointer.updateName("Jimmy")
 	jim.print()
 }
 
-func (pointerToPerson *person) updateName(newFirstName string) {
-	(*pointerToPerson).firstName = newFirstName
+func (pointerToPerson *person) updateName(newFirstName string) { //pointer type
+	(*pointerToPerson).firstName = newFirstName //operator, manipulating the value the pointer is referencing to
 }
 
 func (p person) print() {
