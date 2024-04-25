@@ -12,18 +12,8 @@ func main() {
 		fmt.Println("Error:", err)
 		os.Exit(1)
 	}
-	fmt.Println(resp)
+	
+	bs := make([]byte, 99999)
+	resp.Body.Read(bs)
+	fmt.Println(string(bs))
 }
-
-// reader type
-// type Reader interface {
-// 	Read(p []byte) (n int, err error)
-// }
-
-// *io.ReadCloser*
-
-// io.Reader Interface
-// Read([]byte)(int, error)
-
-// io.Closer Interface
-// Close() (error)
