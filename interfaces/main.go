@@ -30,3 +30,11 @@ func (sb spanishBot) getGreeting() string {
 	// Same logic
 	return "Hola!"
 }
+
+// Concrete types: map, struct, int, string, englishBot
+// Interface type: bot
+
+// Interfaces are not generic types
+// Interfaces are implicit
+// Interfaces are tough
+// Interfaces are a contract to help us manage types
