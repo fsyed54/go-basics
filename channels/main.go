@@ -20,11 +20,9 @@ func main() {
 		go checkLink(link, c) //Added channel
 	}
 
-	fmt.Println(<- c) //Print channel
-	fmt.Println(<- c)
-	fmt.Println(<- c)
-	fmt.Println(<- c)
-	fmt.Println(<- c)
+	for i := 0; i < len(links); i++ { //iterating thru string
+		fmt.Println(<-c)
+	}
 }
 
 func checkLink(link string, c chan string) { //Declare
