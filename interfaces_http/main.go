@@ -14,3 +14,16 @@ func main() {
 	}
 	fmt.Println(resp)
 }
+
+// reader type
+// type Reader interface {
+// 	Read(p []byte) (n int, err error)
+// }
+
+// *io.ReadCloser*
+
+// io.Reader Interface
+// Read([]byte)(int, error)
+
+// io.Closer Interface
+// Close() (error)
