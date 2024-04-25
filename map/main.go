@@ -17,3 +17,15 @@ func printMap(c map[string] string) { //c- color arg
 		fmt.Println("Hex code for", color, "is", hex)
 	}
 }
+
+
+// Map vs Struct
+
+// Map: All keys and values must be of same type
+// Struct: Values can be of different type
+
+// Map: All the different keys are indexed- Iterate over different key value pairs
+// Struct: Cannot iterate over
+
+// Map: Reference type
+// Struct: Value type
